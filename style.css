@@ -6,15 +6,18 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #9dd0ff6b;
   color: #333;
+  font-family: 'Hahmlet', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: #1b758ef6;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -26,6 +29,10 @@ body {
 .logo {
   font-weight: bold;
   font-size: 20px;
+  color: white;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .menu-icon {
@@ -78,7 +85,7 @@ body {
 .image-mainsection {
   position: relative;
   min-height: 100vh;
-  background-image: url(home.png);
+  background-image: url(home.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -96,12 +103,16 @@ body {
 }
 
 .image-text h1 {
-  font-size: 50px;
+  font-size: 55px;
   margin-bottom: 10px;
+  color: #fffffff6;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .image-text p {
-  font-size: 1.5rem;
+  font-size: 22px;
 }
 
 /* section2: 생성형 AI 섹션 스타일 */
@@ -378,7 +389,7 @@ body {
 /* 기술 섹션 */
 .tech-section {
   padding: 50px 20px;
-  background-color: #f4f4f9;
+  background-color: #9dd0ff6b;
 }
 
 .tech-section h2 {
@@ -390,12 +401,13 @@ body {
 
 /* 기술 카드 스타일 */
 .tech-container {
+  /* background-color: #9dd0ff6b; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   justify-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 30px 200px;
 }
 
 .tech-card {
@@ -623,4 +635,81 @@ button.prev {
 
 button.next {
   right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    align-self: flex-end;
+  }
+
+  .dropdown {
+    top: 50px;
+    right: 10px;
+    width: 100%;
+  }
+
+  .dropdown a {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .submain {
+    padding: 0 20px;
+  }
+
+  .tech-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 10px;
+  }
+
+  .tech-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  object {
+    width: 100% !important;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4,
+  h5 {
+    font-size: 18px;
+  }
+
+  .example {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .note {
+    padding: 20px;
+  }
 }
